@@ -1,5 +1,6 @@
 ALVAR - A Library for Virtual and Augmented Reality
 ---------------------------------------------------
+This is a GCC 5.0 Competible source of ALVAR. Built and Tested on Ubuntu 16.04 system.
 
 ALVAR is a software library for creating virtual and augmented reality (AR)
 applications. ALVAR has been developed by the VTT Technical Research Centre
