@@ -2,9 +2,7 @@
 */.DS_Store
 *.idea/
 
-build/
-debian/meetrix_remote_support_alpha
-
+build/build_*_release
 
 CMakeCache.txt
 CMakeFiles
@@ -49,5 +47,3 @@ CTestTestfile.cmake
 *.out
 *.app
 
-bower_components/
-node_modules/
