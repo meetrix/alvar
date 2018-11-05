@@ -21,10 +21,10 @@ on other platforms in `doc` directory.
 
 4. Run ./build/generate_[target].sh, where target is one of the following
    supported platforms.
-     `gcc43: GNU Compiler Collection 4.3`
-     `gcc44: GNU Compiler Collection 4.4`
-     `gcc45: GNU Compiler Collection 4.5 (experimental)`
-     `gcc5: GNU Compiler Collection 5.0 (experimental)`
+     - gcc43: GNU Compiler Collection 4.3
+     - gcc44: GNU Compiler Collection 4.4
+     - gcc45: GNU Compiler Collection 4.5 (experimental)
+     - gcc5: GNU Compiler Collection 5.0 (experimental)
 
    Example:
      `cd ./build`
