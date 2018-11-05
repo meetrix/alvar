@@ -8,46 +8,46 @@ These instructions were tested on Ubuntu 16.04. You can find the original instru
 on other platforms in `doc` directory.
 
 1. Setup a build environment.
-     apt-get install build-essential cmake
+     `apt-get install build-essential cmake`
 
 2. Download and install OpenCV 2.4.0.
 
 3. Install GLUT using distribution package or compile it yourself.
-     apt-get install freeglut-dev
+     `sudo apt-get install freeglut3-dev`
      
 4. Optionally install OpenSceneGraph using distribution package or compile it
    yourself.
-     apt-get install libopenscenegraph-dev
+     `apt-get install libopenscenegraph-dev`
 
 4. Run ./build/generate_[target].sh, where target is one of the following
    supported platforms.
-     gcc43: GNU Compiler Collection 4.3
-     gcc44: GNU Compiler Collection 4.4
-     gcc45: GNU Compiler Collection 4.5 (experimental)
-     gcc5: GNU Compiler Collection 5.0 (experimental)
+     `gcc43: GNU Compiler Collection 4.3
+     `gcc44: GNU Compiler Collection 4.4`
+     `gcc45: GNU Compiler Collection 4.5 (experimental)`
+     `gcc5: GNU Compiler Collection 5.0 (experimental)`
 
    Example:
-     cd ./build
-     chmod +x generate*.sh
-     ./generate_gcc5.sh
+     `cd ./build`
+     `chmod +x generate*.sh`
+     `./generate_gcc5.sh`
 
 5. If CMake cannot find the required libraries, the cmakegui is launched.
    Configure the following variables accroding to your development
    environment.
-     OpenCV_ROOT_DIR = /path/to/opencv
-     GLUT_ROOT_PATH = /usr
-     OSG_ROOT_DIR = /usr
+     `OpenCV_ROOT_DIR = /path/to/opencv`
+     `GLUT_ROOT_PATH = /usr`
+     `OSG_ROOT_DIR = /usr`
 
    Press 'Configure' and modify the paths until the 'Generate' button is
    enabled. Press 'Generate' and close the cmakegui window.
 
 6. Build the project.
-     cd ./build/build_gcc5_release
-     make
+     `cd ./build/build_gcc5_release`
+     `make`
 
 7. Optionally build the 'install' project to copy the sample and demo
    applications to the ./bin directory.
-     make install
+     `make install`
 
 
 How to compile the ALVAR library SRC package
