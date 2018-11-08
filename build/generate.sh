@@ -66,7 +66,7 @@ echo generating build environment
 echo [`date "+%Y/%m/%d-%H:%M:%S"`] generating build environment >> ../generate.log
 cmake -G"$generator" -DCMAKE_BUILD_TYPE=`echo -n "${build:0:1}" | tr "[:lower:]" "[:upper:]"`${build:1} \
       -DCMAKE_C_COMPILER="$environment" -DCMAKE_CXX_COMPILER="`echo $environment | sed -e 's/c/\+/g'`" \
-      -DCMAKE_INSTALL_PREFIX=dist \
+      -DCMAKE_INSTALL_PREFIX="/usr"\
       ../../ >> ../generate.log 2>&1
 if [ $? -ne 0 ]; then
     cmake-gui . >> ../generate.log 2>&1
